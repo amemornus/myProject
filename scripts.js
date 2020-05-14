@@ -30,3 +30,21 @@ function outsideClick(e){
         modal.style.display = 'none';
     }
 }
+// window.onscroll = function() {myfunction()};
+
+// //Get the offset position of the navbar//
+
+// let navbar=document.getElementsByClassName('nabar');
+
+// //Get the offset position of the navbar
+// let sticky = navbar.offsetTop;
+
+
+// function myfunction(){
+//     if (window.pageYOffset >= sticky){
+//         navbar.classList.add('sticky')
+//     }else{
+//         navbar.classList.remove('sticky');
+//     }
+// }
+
