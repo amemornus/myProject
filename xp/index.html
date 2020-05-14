@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Full Body Container -->
+    <div id="container">
+        <!-- Start Header Section -->
+        <header id="header-wrap" class="site-header clearfix">
+             <!-- Start Top Bar -->
+            <div class="top-bar">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 col-md-7 col-sm-8 col-xs-6">
+                    <!-- Start Contact Info -->
+                    <ul class="contact-details hidden-xs">
+                      <li>
+                        <a href="contact.html">
+                        <i class="icon-envelope">$("#toplinks, #toplnks, #toplnked").on('click','a', function(event){ 
+                            event.preventDefault();
+                            var o =  $( $(this).attr("href") ).offset();   
+                            var sT = o.top - $("#fixedbar").outerHeight(true); 
+                            window.scrollTo(0,sT);
+                            });
+                        </i>
+                         <span class="hidden-xs">the email address</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                        <i class="icon-call-out">
+                        </i>
+                        <span class="hidden-xs"> Call Us: 123456789 </span>
+                        </a>
+                      </li>                 
+                    </ul>
+                    <!-- End Contact Info -->
+                  </div>
+                  <div class="col-lg-6 col-md-5 col-sm-4 col-xs-12">
+                    <!-- Start Social Links -->
+                    <ul class="social-list">
+                      <li class = "hidden-sm hidden-md hidden-lg">
+                        <a href="#">
+                        <i class="icon-call-out">
+                        </i>
+                        </a>
+                      </li>
+                      <li class = "hidden-sm hidden-md hidden-lg">
+                        <a href="#">
+                        <i class="icon-envelope">
+                        </i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="social-link facebook" title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" class="social-link twitter" title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" class="social-link google" title="Google Plus" href="#"><i class="fa fa-google-plus"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" class="social-link linkdin" data-toggle="tooltip" data-placement="bottom" title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                    </ul>
+                    <!-- End Social Links -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Top Bar -->
+            <!-- Start  Logo & Navigation  -->
+            <div id= "fixedbar" class="navbar navbar-default navbar-top" role="navigation" data-spy="affix" data-offset-top="50">
+              <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <!-- Stat Toggle Nav Link For Mobiles -->
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <!-- End Toggle Nav Link For Mobiles -->
+                  <div class="logo-wrapper">
+                    <a class="navbar-brand" href="index.html">
+                      <img src="assets/img/logo6.png" alt="SB Construction">
+                    </a>  
+                  </div>
+                </div>
+                <!--  Brand and toggle menu for mobile ends  -->
+                <div class="navbar-collapse collapse">
+                  <!-- Start Navigation List -->
+                  <ul class="nav navbar-nav navbar-right">
+                    <li>
+                      <a class="active" href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li id= "toplinks">
+                              <a href="#whoweare">
+                              Who We Are
+                              </a>
+                            </li>
+                            <li id= "toplnks">
+                              <a href="#ourvision">
+                              Our Mission
+                              </a>
+                            </li>
+                            <li id= "toplnked">
+                              <a href= "#ourvision">
+                              Our Vision
+                              </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                  <!-- End Navigation List -->
+                </div>
+              </div>
+
+              <!-- Mobile Menu Start -->
+              <ul class="wpb-mobile-menu">
+                    <li>
+                      <a class="active" href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li id= "mbil1">
+                              <a href="#whoweare">
+                              Who We Are
+                              </a>
+                            </li>
+                            <li id= "mbil2">
+                              <a href="#ourvision">
+                              Our Vision
+                              </a>
+                            </li>
+                            <li id= "mbil3">
+                              <a href= "#ourmission">
+                              Our Mission
+                              </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact</a>
+                    </li>
+              </ul>
+              <!-- Mobile Menu End -->
+            </div>
+            <!-- End Header Logo & Navigation -->
+            <div class="clearfix"></div>
+          </header>
+          <!-- End Header Section -->
+          <script src="jscript.js"></script>
+</body>
+</html>
